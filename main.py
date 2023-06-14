@@ -6,10 +6,10 @@ headers_empresa = ["cnpj","razaosocial_nomeempresarial","naturezajuridica","qual
 headers_socios = ["cnpj","identifsocio","nomesocio_razaosocial","cnpj_cpfsocio","qualifsocio","dataentradasocied","pais","reprlegal","nomerepr","qualifreprlegal","faixaetaria"]
 headers_estabelecimentos = ["cnpj", "cnpjordem", "cnpjdv", "identifmatriz_filial", "nomefantasia","situcadastral", "datasitucadastral","motivositucadastral","nomecidadeexterior", "pais","datainicioatvd","cnaefiscalprincip","cnaefiscsecund","tipologradouro","logradouro","numero","complemento","bairro","cep","uf","municipio"]
 
-nrows = 50000
-src = "K3241.K03200Y9.D30513.ESTABELE.csv"
-dst = "estabelecimentos_file_dest.csv"
-headers = headers_estabelecimentos
+nrows = 200000
+src = "K3241.K03200Y9.D30513.SOCIO.csv"
+dst = "socios_file_dest.csv"
+headers = headers_socios
 
 print(f"Gerando CSV de {dst.split('_')[0].upper()} com {nrows} linhas a partir do arquivo {src.split('.')[-2]}")
 
